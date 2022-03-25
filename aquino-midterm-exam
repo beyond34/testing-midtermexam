@@ -1,0 +1,22 @@
+class student:
+    def __init__ (self, name,subject,section):
+        self.name=name
+        self.subject=subject
+        self.section=section
+
+    def inputInfo(self, name, subject, section):
+        self.name = str(input("Enter your Surname: "))
+        self.subject = str(input("Enter your Subject: "))
+        self.section = str(input("Enter your Section"))
+
+    def display_greetings(self, name, subject, section):
+        print("Hi!", self.name, "you are taking midterm examinition on the subject ",self.subject,"on section ", self.section )
+        print("Thank you" + self.name, "you finish the exam!")
+
+name = ("")
+subject=("")
+section=("")
+obj = student(name, subject, section )
+obj.inputInfo(name, subject, section)
+obj.display_greetings(name, subject, section)
+
